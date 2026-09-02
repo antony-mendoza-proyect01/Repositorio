@@ -94,30 +94,32 @@ export class HomeComponent implements AfterViewInit {
     this.initSideRevealObserver();
   }
 
-  initRevealObserver() {
+  private initRevealObserver(): void {
     const reveals = document.querySelectorAll('.reveal');
 
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('active');
+          observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.2 });
+    }, { threshold: 0, rootMargin: '0px 0px -80px 0px' });
 
     reveals.forEach(el => observer.observe(el));
   }
 
-  initSideRevealObserver() {
+  private initSideRevealObserver(): void {
     const sides = document.querySelectorAll('.reveal-left, .reveal-right');
 
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('active');
+          observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.25 });
+    }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
 
     sides.forEach(el => observer.observe(el));
   }

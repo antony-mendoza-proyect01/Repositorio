@@ -1916,3 +1916,12 @@
     text-align: center;
   }
 }
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-left,
+  .reveal-right {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
