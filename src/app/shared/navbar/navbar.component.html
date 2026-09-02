@@ -1,0 +1,58 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <!-- LOGO -->
+    <a routerLink="/" class="logo">
+      Antony <span> Mendoza</span>
+    </a>
+
+    <!-- DESKTOP MENU -->
+    <ul class="nav-links">
+
+      <li><a (click)="navigate('home')">{{ lang.t('home') }}</a></li>
+<!--      <li><a (click)="navigate('tech')">{{ lang.t('techTitle') }}</a></li>-->
+      <li><a (click)="navigate('experience')">{{ lang.t('experience') }}</a></li>
+      <li><a (click)="navigate('skills')">{{ lang.t('skills') }}</a></li>
+      <li><a (click)="navigate('projects')">{{ lang.t('projects') }}</a></li>
+      <li><a (click)="navigate('contact')">{{ lang.t('contact') }}</a></li>
+    </ul>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <button
+        class="theme-toggle"
+        (click)="toggleTheme()"
+        [attr.aria-label]="isDark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'"
+      >
+        <span class="icon sun" *ngIf="isDark"></span>
+        <span class="icon moon" *ngIf="!isDark"></span>
+      </button>
+<!--      <button class="icon-btn" (click)="toggleTheme()" title="Theme">-->
+<!--        🌗-->
+<!--      </button>-->
+
+      <div class="lang">
+        <button
+          [class.active]="lang.lang === 'es'"
+          (click)="setLang('es')">
+          ES
+        </button>
+        <button
+          [class.active]="lang.lang === 'en'"
+          (click)="setLang('en')">
+          EN
+        </button>
+      </div>
+
+      <!-- MOBILE TOGGLE -->
+      <button class="menu-btn" (click)="toggleMenu()">☰</button>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" [class.open]="menuOpen">
+    <a routerLink="/home">{{ lang.t('home') }}</a>
+    <a routerLink="/sobre-mi">{{ lang.t('about') }}</a>
+    <a routerLink="/proyectos">{{ lang.t('projects') }}</a>
+    <a routerLink="/contact">{{ lang.t('contact') }}</a>
+  </div>
+</nav>

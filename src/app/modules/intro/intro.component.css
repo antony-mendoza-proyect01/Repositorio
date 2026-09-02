@@ -1,0 +1,61 @@
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+.intro.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.intro-content {
+  text-align: center;
+  color: #e5e7eb;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.intro-name {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.intro-role {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #94a3b8;
+  animation: fadeUp 1.4s ease forwards;
+}
+
+.intro-line {
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 2rem auto 0;
+  background: linear-gradient(90deg, #3b82f6, #9333ea);
+  border-radius: 2px;
+  animation: lineGrow 1.2s ease forwards;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes lineGrow {
+  from { width: 0; }
+  to { width: 60px; }
+}

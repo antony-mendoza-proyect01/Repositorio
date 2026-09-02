@@ -1,0 +1,963 @@
+<section id="home" class="hero-wrapper">
+  <div class="particles"></div>
+
+  <section class="hero">
+
+    <!-- AVATAR -->
+    <div class="avatar-wrapper">
+      <div class="avatar-ring">
+        <img src="assets/img/31.jpeg" alt="Antony Mendoza" />
+      </div>
+    </div>
+
+    <h1>{{ lang.t('homeTitle') }}</h1>
+    <h2>{{ lang.t('homeSubtitle') }}</h2>
+    <p>{{ lang.t('homeDescription') }}</p>
+
+    <div class="actions">
+      <a routerLink="/proyectos" class="btn-primary ">
+        {{ lang.t('projects') }}
+      </a>
+
+      <a
+        href="assets/pdf/CV%20Antony%20Mendoza.pdf"
+        download
+        class="btn-outline"
+      >
+        {{ lang.lang === 'es' ? 'Descargar CV' : 'Download CV' }}
+      </a>
+    </div>
+  </section>
+</section>
+
+<section  class="tech-section  reveal">
+  <h3 class="section-title">
+    {{ lang.t('techTitle') }}
+  </h3>
+
+  <p class="section-subtitle">
+    {{ lang.t('techDescription') }}
+  </p>
+
+  <div class="tech-grid">
+    <div class="tech-card">Angular</div>
+    <div class="tech-card">React</div>
+    <div class="tech-card">TypeScript</div>
+    <div class="tech-card">HTML & CSS</div>
+    <div class="tech-card">.NET / C#</div>
+    <div class="tech-card">Java / Sprint boot</div>
+    <div class="tech-card">Python</div>
+    <div class="tech-card">Docker</div>
+    <div class="tech-card">REST APIs</div>
+    <div class="tech-card">SQL Server</div>
+    <div class="tech-card">Git & GitHub</div>
+    <div class="tech-card">Clean Architecture</div>
+  </div>
+</section>
+
+
+<section class="about-section scroll-alt">
+  <div class="about-container">
+
+    <div class="about-grid">
+
+      <!-- COLUMNA IZQUIERDA -->
+      <div class="about-cards reveal-left" #left>
+
+        <div class="experience-card">
+          <div class="card-header">
+            <span class="card-dot"></span>
+            <h4>3+ Años de experiencia</h4>
+          </div>
+
+          <p>
+            Desarrollador Frontend y Backend
+          </p>
+        </div>
+
+        <div class="experience-card">
+          <div class="card-header">
+            <span class="card-dot"></span>
+            <h4>Titulos</h4>
+          </div>
+
+          <p>
+            Ingeniero de sistemas, Diplomado de desarrollo de software
+          </p>
+        </div>
+
+        <div class="experience-card">
+          <h4>Liderazgo Tecnico</h4>
+          <p>
+            Me destaco por aplicar buenas prácticas, arquitectura limpia y
+            soluciones orientadas a negocio, cuidando el rendimiento y la
+            experiencia de usuario.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- COLUMNA DERECHA -->
+      <div class="about-text reveal-right" #right>
+        <h3>{{ lang.t('aboutTitle') }}</h3>
+
+        <p>
+          {{ lang.t('aboutDescription') }}
+        </p>
+
+        <p>
+          Trabajo con un enfoque analítico, priorizando la calidad del código y
+          la comunicación clara dentro del equipo. Me adapto con facilidad a
+          distintos entornos y tecnologías.
+        </p>
+
+        <p class="about-highlight">
+          {{ lang.t('aboutHighlight') }}
+        </p>
+
+        <!-- SOFT SKILLS -->
+        <div class="team-skills">
+          <span>Trabajo en equipo</span>
+          <span>Comunicación efectiva</span>
+          <span>Pensamiento crítico</span>
+          <span>Resolución de problemas</span>
+          <span>Autonomía</span>
+          <span>Responsabilidad</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="projects" class="projects-section reveal">
+  <div class="projects-container">
+
+    <h3 class="section-title">
+      {{ lang.t('projectsTitle') }}
+    </h3>
+
+    <p class="section-subtitle">
+      {{ lang.t('projectsSubtitle') }}
+    </p>
+
+    <div class="projects-grid">
+
+      <!-- PROYECTO 1 -->
+      <article class="project-card reveal">
+        <div class="project-header">
+          <h4>{{ lang.t('project1Title') }}</h4>
+          <span class="project-type">
+            {{ lang.t('projectTypeWeb') }}
+          </span>
+        </div>
+
+        <p class="project-description">
+          {{ lang.t('project1Desc') }}
+        </p>
+
+        <div class="project-tech">
+          <span>Angular</span>
+          <span>.NET</span>
+          <span>SQL Server</span>
+          <span>REST API</span>
+        </div>
+      </article>
+
+      <!-- PROYECTO 2 -->
+      <article class="project-card reveal">
+        <div class="project-header">
+          <h4>{{ lang.t('project2Title') }}</h4>
+          <span class="project-type">
+            {{ lang.t('projectTypeDashboard') }}
+          </span>
+        </div>
+
+        <p class="project-description">
+          {{ lang.t('project2Desc') }}
+        </p>
+
+        <div class="project-tech">
+          <span>Angular</span>
+          <span>Chart.js</span>
+          <span>RxJS</span>
+          <span>JWT</span>
+        </div>
+      </article>
+
+      <!-- PROYECTO 3 -->
+      <article class="project-card reveal">
+        <div class="project-header">
+          <h4>{{ lang.t('project3Title') }}</h4>
+          <span class="project-type">
+            {{ lang.t('projectTypeBackend') }}
+          </span>
+        </div>
+
+        <p class="project-description">
+          {{ lang.t('project3Desc') }}
+        </p>
+
+        <div class="project-tech">
+          <span>.NET</span>
+          <span>Clean Architecture</span>
+          <span>OAuth</span>
+          <span>FTP</span>
+        </div>
+      </article>
+
+
+    </div>
+    <p class="section-subtitle personal">
+      {{ lang.t('projectsPersonalSubtitle') }}
+    </p>
+    <article class="project-card accent-blue reveal">
+      <header class="project-header">
+        <h4>{{ lang.t('project1Title') }}</h4>
+        <span class="project-type">
+      {{ lang.t('projectTypeWeb') }}
+    </span>
+      </header>
+
+      <p class="project-description">
+        {{ lang.t('project1Desc') }}
+      </p>
+
+      <div class="project-tech">
+        <span>Angular</span>
+        <span>.NET</span>
+        <span>SQL Server</span>
+        <span>REST API</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="project" class="projects-section reveal">
+  <div class="projects-container">
+  <h3 class="section-title">
+    <i class="icon-user"></i>
+    {{ lang.t('projectsPersonalSubtitle') }}
+  </h3>
+
+  <div class="projects-grid">
+
+    <!-- CARD -->
+    <article class="project-card purple">
+      <div class="project-header">
+        <div class="project-icon"></div>
+        <div>
+          <h4>NESS</h4>
+          <span class="project-year">2024</span>
+        </div>
+      </div>
+
+      <p class="project-description">
+        Sitio web profesional desarrollado para un negocio independiente,
+        enfocado en presencia digital y experiencia de usuario.
+        Implementa arquitectura moderna, componentes reutilizables,
+        diseño responsive y despliegue en producción.
+      </p>
+
+      <div class="project-tech">
+        <span>Next.js</span>
+        <span>React</span>
+        <span>Tailwind</span>
+        <span>Vercel</span>
+      </div>
+
+      <a class="project-link" href="#" target="_blank">
+        ↗ Ver demo
+      </a>
+    </article>
+
+    <!-- CARD -->
+    <article class="project-card blue">
+      <div class="project-header">
+        <div class="project-icon"></div>
+        <div>
+          <h4>YT-DLP GUI Electron</h4>
+          <span class="project-year">2024</span>
+        </div>
+      </div>
+
+      <p class="project-description">
+        Aplicación de escritorio para descargar videos de YouTube
+        usando yt-dlp con interfaz gráfica en Electron.
+      </p>
+
+      <div class="project-tech">
+        <span>Electron</span>
+        <span>JavaScript</span>
+        <span>Node.js</span>
+        <span>HTML/CSS</span>
+      </div>
+
+      <a class="project-link" href="#" target="_blank">
+        <i class="icon-github"></i> Código
+      </a>
+    </article>
+
+    <!-- CARD -->
+    <article class="project-card green">
+      <div class="project-header">
+        <div class="project-icon"></div>
+        <div>
+          <h4>App Móvil de Cobros</h4>
+          <span class="project-year">2026</span>
+        </div>
+      </div>
+
+      <p class="project-description">
+        Aplicación móvil para la gestión y registro de cobros,
+        con control de clientes, historial de pagos y generación
+        de comprobantes. Construida con Ionic y Angular para
+        despliegue multiplataforma (Android / iOS) desde una sola base de código.
+      </p>
+
+      <div class="project-tech">
+        <span>Ionic</span>
+        <span>Angular</span>
+        <span>TypeScript</span>
+        <span>Capacitor</span>
+      </div>
+
+      <a class="project-link" href="#" target="_blank">
+        ↗ Ver demo
+      </a>
+    </article>
+  </div>
+  </div>
+</section>
+<section id="experience" class="experience-section reveal">
+
+  <!-- HEADER -->
+  <header class="experience-header">
+    <h2>
+      {{ lang.t('experienceTitle') }}
+      <span>{{ lang.t('skillsTitle') }}</span>
+    </h2>
+
+    <span class="underline"></span>
+
+    <p class="experience-intro">
+      {{ lang.t('experienceIntro') }}
+    </p>
+  </header>
+
+  <!-- EXPERIENCIA PROFESIONAL -->
+  <div class="experience-container">
+
+    <h3 class="experience-subtitle">
+      💼 {{ lang.t('professionalExperience') }}
+    </h3>
+
+    <!-- ICBF -->
+    <article class="experience-card reveal-left">
+      <div class="experience-card-header">
+        <div>
+          <h4>Desarrollador Full Stack</h4>
+          <span class="company">Instituto Colombiano de Bienestar Familiar (ICBF)</span>
+        </div>
+        <span class="experience-date">Mayo 2025 – Actualidad</span>
+      </div>
+
+      <div class="experience-project">
+        <h5>SIUM <small>— App móvil de seguimiento a niños en zonas rurales y de desplazamiento forzado</small></h5>
+        <ul class="experience-list">
+          <li>Desarrollo de la aplicación móvil con Angular e Ionic, integrada con APIs REST en .NET y SQL Server.</li>
+          <li>Migración del sistema a tecnologías modernas para mejorar la eficiencia operativa del seguimiento en campo.</li>
+        </ul>
+      </div>
+
+      <div class="experience-project">
+        <h5>ADÓPTAME <small>— Plataforma de gestión y priorización de adopciones de niños con condiciones especiales</small></h5>
+        <ul class="experience-list">
+          <li>Creación de todos los módulos y diseño del sitio con Angular 15, Ng Bootstrap y SCSS; backend en .NET con SQL Server.</li>
+          <li>Implementación del flujo de seguimiento de casos para dar trazabilidad y prioridad a las adopciones.</li>
+          <li>Gestión del proyecto con Jira bajo metodología Scrum.</li>
+        </ul>
+      </div>
+
+      <div class="experience-tech">
+        <span>Angular</span>
+        <span>Ionic</span>
+        <span>.NET</span>
+        <span>SQL Server</span>
+        <span>SCSS</span>
+        <span>Jira / Scrum</span>
+      </div>
+    </article>
+    <br>
+
+    <!-- BRANDER IDEAS -->
+    <article class="experience-card reveal-right">
+      <div class="experience-card-header">
+        <div>
+          <h4>Desarrollador Full Stack</h4>
+          <span class="company">Brander Ideas</span>
+        </div>
+        <span class="experience-date">Febrero 2023 – Mayo 2025</span>
+      </div>
+
+      <div class="experience-project">
+        <h5>Analítica EDEQ <small>— Grupo EPM · Ene 2025 – May 2025</small></h5>
+        <ul class="experience-list">
+          <li>Desarrollo del frontend completo con Angular 18, Ng Bootstrap y Chart.js para visualización y análisis de grandes volúmenes de datos de inventario.</li>
+          <li>Integración con backend en Python (FastAPI) y base de datos SQL Server.</li>
+        </ul>
+      </div>
+
+      <div class="experience-project">
+        <h5>GIRA <small>— ICBF · Feb 2023 – Dic 2024</small></h5>
+        <ul class="experience-list">
+          <li>Sistema de gestión para el proceso de responsabilidad penal adolescente del ICBF en centros especializados.</li>
+          <li>Creación de todos los módulos del frontend con Angular 15, Ng Bootstrap y Chart.js; integración con APIs REST en .NET y SQL Server.</li>
+          <li>Gestión con Azure DevOps y Jira bajo metodología Scrum.</li>
+        </ul>
+      </div>
+
+      <div class="experience-project">
+        <h5>Vital Forest <small>— Ministerio de Ambiente y Desarrollo Sostenible · Feb 2023 – Sep 2024</small></h5>
+        <ul class="experience-list">
+          <li>Desarrollo de aplicación monolítica con ASP.NET Core MVC para la administración y geolocalización de bosques en trámites de permisos de aprovechamiento forestal.</li>
+          <li>Despliegue y operación en AWS.</li>
+        </ul>
+      </div>
+
+      <div class="experience-tech">
+        <span>Angular 18</span>
+        <span>Chart.js</span>
+        <span>Python / FastAPI</span>
+        <span>ASP.NET Core MVC</span>
+        <span>SQL Server</span>
+        <span>AWS</span>
+        <span>Azure DevOps</span>
+      </div>
+    </article>
+    <br>
+
+    <!-- STACK POINTER -->
+    <article class="experience-card reveal-left">
+      <div class="experience-card-header">
+        <div>
+          <h4>Desarrollador Frontend / Soporte de Aplicaciones</h4>
+          <span class="company">Stack Pointer</span>
+        </div>
+        <span class="experience-date">Enero 2022 – Agosto 2022</span>
+      </div>
+
+      <div class="experience-project">
+        <h5>Cerrejón <small>— Factpozos, Geoscript y Calibraciones</small></h5>
+        <ul class="experience-list">
+          <li>Migración de aplicaciones web de seguimiento de pozos, supervisión y calibraciones a Angular 13 con NgRx, Ng Bootstrap y SCSS.</li>
+          <li>Trabajo con base de datos Oracle y pipeline de despliegue con Docker y Jenkins.</li>
+        </ul>
+      </div>
+
+      <div class="experience-project">
+        <h5>Liberty Network <small>— SAR</small></h5>
+        <ul class="experience-list">
+          <li>Migración del sistema a Angular 13, con creación de módulos, diseño de la interfaz y asignación de tareas al equipo de frontend.</li>
+          <li>Control de versiones en GitLab y gestión con Jira bajo metodología Scrum.</li>
+          <li>Soporte y desarrollo de nuevas funcionalidades y corrección de incidencias en las aplicaciones a cargo.</li>
+        </ul>
+      </div>
+
+      <div class="experience-tech">
+        <span>Angular 13</span>
+        <span>NgRx</span>
+        <span>Oracle</span>
+        <span>Docker</span>
+        <span>Jenkins</span>
+        <span>GitLab</span>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- HABILIDADES -->
+  <div class="skills-container">
+    <h3 class="experience-subtitle">
+      ⚡ {{ lang.t('skillsSubtitle') }}
+    </h3>
+
+    <div class="skills-grid">
+      <div class="skill-card">{{ lang.t('skillCleanCode') }}</div>
+      <div class="skill-card">{{ lang.t('skillTeamwork') }}</div>
+      <div class="skill-card">{{ lang.t('skillCommunication') }}</div>
+      <div class="skill-card">{{ lang.t('skillProblemSolving') }}</div>
+      <div class="skill-card">{{ lang.t('skillAutonomy') }}</div>
+      <div class="skill-card">{{ lang.t('skillResponsibility') }}</div>
+    </div>
+  </div>
+
+</section>
+<!--<section  id="experience" class="experience-section reveal">-->
+
+<!--  &lt;!&ndash; HEADER &ndash;&gt;-->
+<!--  <header class="experience-header">-->
+<!--    <h2>-->
+<!--      {{ lang.t('experienceTitle') }}-->
+<!--      <span>{{ lang.t('skillsTitle') }}</span>-->
+<!--    </h2>-->
+
+<!--    <span class="underline"></span>-->
+
+<!--    <p class="experience-intro">-->
+<!--      {{ lang.t('experienceIntro') }}-->
+<!--    </p>-->
+<!--  </header>-->
+
+<!--  &lt;!&ndash; EXPERIENCIA PROFESIONAL &ndash;&gt;-->
+<!--  <div class="experience-container">-->
+
+<!--    <h3 class="experience-subtitle">-->
+<!--      💼 {{ lang.t('professionalExperience') }}-->
+<!--    </h3>-->
+
+<!--    &lt;!&ndash; EMPRESA 1 &ndash;&gt;-->
+<!--    <article class="experience-card reveal-left">-->
+<!--      <div class="experience-card-header">-->
+<!--        <div>-->
+<!--          <h4>Software Developer</h4>-->
+<!--          <span class="company">Belcorp</span>-->
+<!--        </div>-->
+<!--        <span class="experience-date">-->
+<!--          {{ lang.t('belcorpDate') }}-->
+<!--        </span>-->
+<!--      </div>-->
+
+<!--      <ul class="experience-list">-->
+<!--        <li>{{ lang.t('belcorpTask1') }}</li>-->
+<!--        <li>{{ lang.t('belcorpTask2') }}</li>-->
+<!--        <li>{{ lang.t('belcorpTask3') }}</li>-->
+<!--        <li>{{ lang.t('belcorpTask4') }}</li>-->
+<!--      </ul>-->
+
+<!--      <div class="experience-tech">-->
+<!--        <span>Angular</span>-->
+<!--        <span>.NET</span>-->
+<!--        <span>SQL Server</span>-->
+<!--        <span>REST API</span>-->
+<!--        <span>Azure</span>-->
+<!--      </div>-->
+<!--    </article>-->
+<!--    <br>-->
+<!--    &lt;!&ndash; EMPRESA 2 &ndash;&gt;-->
+<!--    <article class="experience-card reveal-right">-->
+<!--      <div class="experience-card-header">-->
+<!--        <div>-->
+<!--          <h4>Full Stack Developer</h4>-->
+<!--          <span class="company">Proyectos Freelance</span>-->
+<!--        </div>-->
+<!--        <span class="experience-date">-->
+<!--          {{ lang.t('freelanceDate') }}-->
+<!--        </span>-->
+<!--      </div>-->
+
+<!--      <ul class="experience-list">-->
+<!--        <li>{{ lang.t('freelanceTask1') }}</li>-->
+<!--        <li>{{ lang.t('freelanceTask2') }}</li>-->
+<!--        <li>{{ lang.t('freelanceTask3') }}</li>-->
+<!--      </ul>-->
+
+<!--      <div class="experience-tech">-->
+<!--        <span>Angular</span>-->
+<!--        <span>Node.js</span>-->
+<!--        <span>Python</span>-->
+<!--        <span>PostgreSQL</span>-->
+<!--        <span>Docker</span>-->
+<!--      </div>-->
+<!--    </article>-->
+
+<!--  </div>-->
+
+<!--  &lt;!&ndash; HABILIDADES &ndash;&gt;-->
+<!--  <div class="skills-container">-->
+<!--    <h3 class="experience-subtitle">-->
+<!--      ⚡ {{ lang.t('skillsSubtitle') }}-->
+<!--    </h3>-->
+
+<!--    <div class="skills-grid">-->
+<!--      <div class="skill-card">{{ lang.t('skillCleanCode') }}</div>-->
+<!--      <div class="skill-card">{{ lang.t('skillTeamwork') }}</div>-->
+<!--      <div class="skill-card">{{ lang.t('skillCommunication') }}</div>-->
+<!--      <div class="skill-card">{{ lang.t('skillProblemSolving') }}</div>-->
+<!--      <div class="skill-card">{{ lang.t('skillAutonomy') }}</div>-->
+<!--      <div class="skill-card">{{ lang.t('skillResponsibility') }}</div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--</section>-->
+
+<section id="skills" class="skills-section reveal">
+  <div class="projects-container">
+
+  <!-- TITULO -->
+  <header class="section-header">
+    <h2>{{ lang.t('techSkillsTitle') }}</h2>
+  </header>
+
+  <!-- HABILIDADES -->
+  <div class="skills-grid">
+
+    <article class="skill-card frontend">
+      <h4>⚛ Frontend</h4>
+      <ul>
+        <li>Angular</li>
+        <li>React</li>
+        <li>Next.js</li>
+        <li>TypeScript</li>
+        <li>Tailwind CSS</li>
+        <li>ShadCN / Ant Design</li>
+        <li>GraphQL</li>
+      </ul>
+    </article>
+
+    <article class="skill-card backend">
+      <h4>🗄 Backend</h4>
+      <ul>
+        <li>.NET Core / Framework</li>
+        <li>Node.js / Express</li>
+        <li>Django</li>
+        <li>Python</li>
+        <li>SQL Server</li>
+        <li>MongoDB</li>
+        <li>Firebase</li>
+      </ul>
+    </article>
+
+    <article class="skill-card devops">
+      <h4>⚙ DevOps & Tools</h4>
+      <ul>
+        <li>Docker</li>
+        <li>AWS / Lambda</li>
+        <li>Vercel</li>
+        <li>Git / GitFlow</li>
+        <li>Jest / RTL</li>
+        <li>UnifyApps</li>
+      </ul>
+    </article>
+
+    <article class="skill-card special">
+      <h4>🧩 Especializaciones</h4>
+      <ul>
+        <li>Microfrontends</li>
+        <li>FHIR HL7</li>
+        <li>WebSockets</li>
+        <li>Testing avanzado</li>
+        <li>IA Generativa</li>
+      </ul>
+    </article>
+
+  </div>
+
+  <!-- LOGROS -->
+  <header class="section-header achievements">
+    <h3>{{ lang.t('achievementsTitle') }}</h3>
+  </header>
+
+  <div class="achievements-grid">
+
+    <article class="achievement-card blue">
+      <h4>📘 Publicación Internacional</h4>
+      <p>
+        {{ lang.t('achievement1') }}
+      </p>
+    </article>
+
+    <article class="achievement-card gold">
+      <h4>🏆 ERPsim Game</h4>
+      <p>
+        {{ lang.t('achievement2') }}
+      </p>
+    </article>
+
+    <article class="achievement-card green">
+      <h4>⚡ Migraciones Críticas</h4>
+      <p>
+        {{ lang.t('achievement3') }}
+      </p>
+    </article>
+
+    <article class="achievement-card red">
+      <h4>🛠 Sistemas Legados</h4>
+      <p>
+        {{ lang.t('achievement4') }}
+      </p>
+    </article>
+
+  </div>  </div>
+
+</section>
+
+<section id="contact" class="contact-section reveal">
+  <div class="projects-container">
+
+    <h2>{{ lang.t('contactTitle') }}</h2>
+    <span class="divider"></span>
+
+    <div class="contact-container">
+
+      <!-- FORM -->
+      <form class="contact-form" (ngSubmit)="sendEmail()">
+
+        <div class="row">
+          <div class="field">
+            <label for="name">{{ lang.t('contactName') }}</label>
+            <input id="name" name="name" type="text" required
+                   [(ngModel)]="form.name"
+                   placeholder="{{ lang.t('contactName') }}" />
+          </div>
+
+          <div class="field">
+            <label for="email">{{ lang.t('contactEmail') }}</label>
+            <input id="email" name="email" type="email" required
+                   [(ngModel)]="form.email"
+                   placeholder="{{ lang.t('contactEmail') }}" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="subject">{{ lang.t('contactSubject') }}</label>
+          <input id="subject" name="subject" type="text"
+                 [(ngModel)]="form.subject"
+                 placeholder="{{ lang.t('contactSubject') }}" />
+        </div>
+
+        <div class="field">
+          <label for="message">{{ lang.t('contactMessage') }}</label>
+          <textarea id="message" name="message" rows="5" required
+                    [(ngModel)]="form.message"
+                    placeholder="{{ lang.t('contactMessage') }}"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-send" [disabled]="!isValid || sending">
+            <i class="fa-solid fa-paper-plane"></i>
+            {{ sending ? 'Enviando...' : lang.t('contactSend') }}
+          </button>
+
+          <button type="button" class="btn-whatsapp"
+                  (click)="sendToWhatsapp()" [disabled]="!isValid">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+          </button>
+        </div>
+
+        @if (status === 'ok') {
+        <p class="form-msg ok">
+          ✓ Mensaje enviado. Te responderé pronto.
+        </p>
+        }
+
+        @if (status === 'error') {
+        <p class="form-msg error">
+          No se pudo enviar. Escríbeme a
+          <a href="mailto:antoni-6191&#64;hotmail.com">antoni-6191&#64;hotmail.com</a>
+            o por WhatsApp.
+          </p>
+        }
+      </form>
+
+      <div class="contact-info">
+
+        <div class="availability">
+          <span class="pulse-dot"></span>
+          Disponible para nuevas oportunidades
+        </div>
+
+        <h3>{{ lang.t('contactInfoTitle') }}</h3>
+
+        <div class="info-card whatsapp">
+          <a [href]="directWhatsapp" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>+57 300 546 9612</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+          </a>
+        </div>
+
+        <div class="info-card phone">
+          <a href="tel:+573005469612">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Teléfono</strong>
+              <span>+57 300 546 9612</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+          </a>
+        </div>
+
+        <div class="info-card email">
+          <a href="mailto:antoni-6191&#64;hotmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <span>antoni-6191&#64;hotmail.com</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+          </a>
+        </div>
+
+        <div class="info-card location">
+          <a href="https://maps.google.com/?q=Barranquilla,Colombia" target="_blank" rel="noopener">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>{{ lang.t('contactLocationLabel') }}</strong>
+              <span>Barranquilla, Colombia · Remoto</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+          </a>
+        </div>
+
+        <div class="info-card cv">
+          <a href="assets/pdf/CV%20Antony%20Mendoza.pdf" download>
+            <i class="fa-solid fa-file-arrow-down"></i>
+            <div>
+              <strong>Hoja de vida</strong>
+              <span>Descargar PDF</span>
+            </div>
+            <i class="fa-solid fa-download arrow"></i>
+          </a>
+        </div>
+
+        <h3>{{ lang.t('contactSocialTitle') }}</h3>
+
+        <div class="info-card linkedin">
+          <a href="https://www.linkedin.com/in/antony-mendoza-quintero-2705ba236/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div>
+              <strong>LinkedIn</strong>
+              <span>Antony Mendoza Quintero</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+          </a>
+        </div>
+
+        <div class="info-card github">
+          <a href="https://github.com/antony-mendoza-proyect01" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <strong>GitHub</strong>
+              <span>&#64;antony-mendoza-proyect01</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+          </a>
+        </div>
+
+        <div class="quick-response">
+          <strong>{{ lang.t('contactFastTitle') }}</strong>
+          <p>{{ lang.t('contactFastDesc') }}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <h3>Antony Mendoza</h3>
+      <p class="footer-role">Ingeniero de Sistemas · Full Stack Developer</p>
+      <p>{{ lang.t('footerDescription') }}</p>
+
+      <div class="footer-status">
+        <span class="pulse-dot"></span>
+        {{ lang.lang === 'es' ? 'Disponible para proyectos' : 'Available for projects' }}
+      </div>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-links">
+      <h4>{{ lang.t('footerSections') }}</h4>
+      <nav>
+        <a href="#home">{{ lang.t('home') }}</a>
+        <a href="#about">{{ lang.t('about') }}</a>
+        <a href="#projects">{{ lang.t('projects') }}</a>
+        <a href="#experience">{{ lang.t('experienceTitle') }}</a>
+        <a href="#skills">{{ lang.t('techSkillsTitle') }}</a>
+        <a href="#contact">{{ lang.t('contact') }}</a>
+      </nav>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-contact">
+      <h4>{{ lang.t('footerContact') }}</h4>
+
+      <a href="mailto:antoni-6191&#64;hotmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>antoni-6191&#64;hotmail.com</span>
+      </a>
+
+      <a [href]="directWhatsapp" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>+57 300 546 9612</span>
+      </a>
+
+      <a href="https://maps.google.com/?q=Barranquilla,Colombia" target="_blank" rel="noopener">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Barranquilla, Colombia</span>
+      </a>
+
+      <a href="assets/pdf/CV%20Antony%20Mendoza.pdf" download class="footer-cv">
+        <i class="fa-solid fa-file-arrow-down"></i>
+        <span>{{ lang.lang === 'es' ? 'Descargar CV' : 'Download CV' }}</span>
+      </a>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-social">
+      <h4>{{ lang.t('footerSocial') }}</h4>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/antony-mendoza-quintero-2705ba236/"
+           target="_blank" rel="noopener" aria-label="LinkedIn" class="social linkedin">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://github.com/antony-mendoza-proyect01"
+           target="_blank" rel="noopener" aria-label="GitHub" class="social github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a [href]="directWhatsapp"
+           target="_blank" rel="noopener" aria-label="WhatsApp" class="social whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="mailto:antoni-6191&#64;hotmail.com"
+           aria-label="Email" class="social mail">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+
+      <div class="footer-stack">
+        <span>Angular</span>
+        <span>.NET</span>
+        <span>Ionic</span>
+        <span>SQL Server</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>
+      © {{ currentYear }} Ing. Antony Mendoza — {{ lang.t('footerRights') }}
+    </span>
+
+    <a href="#home" class="back-to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+      {{ lang.lang === 'es' ? 'Volver arriba' : 'Back to top' }}
+    </a>
+  </div>
+</footer>

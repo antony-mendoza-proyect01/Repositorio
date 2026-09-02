@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-color: #f8f9fb;
+  --text-color: #2c2c2c;
+  --card-bg: #ffffff;
+  --primary: #2563eb;
+  --secondary: #374151;
+}
+
+[data-theme="dark"] {
+  --bg-color: #0f172a;
+  --text-color: #e5e7eb;
+  --card-bg: #1e293b;
+  --primary: #60a5fa;
+  --secondary: #cbd5f5;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.project-card {
+  background-color: var(--card-bg);
+}
+html {
+  scroll-behavior: smooth !important;
+}
